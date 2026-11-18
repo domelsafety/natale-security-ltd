@@ -36,3 +36,5 @@ a.fc:hover{background:#ffffff22;transform:translateY(-3px);border-color:var(--y)
 .ft-bot .w{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
 .ft-bot .brand{color:#fff}.ft-bot .brand small{display:block;color:var(--y);font-size:12px;letter-spacing:1px}.ft-bot .brand img{height:64px;background:#fff;border-radius:50%;padding:4px}
 .ft-bot nav a{color:#fff;font-weight:500}.ft-bot p{text-align:center;color:#9C97C2;font-size:13px;margin:18px 0 0}
+.ft-bot .credit{margin:6px 0 0;font-size:13px;color:#9C97C2}.ft-bot .credit strong{color:var(--y);font-weight:600}
+.lg{display:flex;border:2px solid var(--n);border-radius:999px;overflow:hidden}.lg button{border:0;background:#fff;color:var(--n);font:700 14px Inter,Arial,sans-serif;padding:8px 14px;cursor:pointer;min-height:40px}.lg button[aria-pressed=true]{background:var(--n);color:var(--y)}
