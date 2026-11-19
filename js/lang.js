@@ -1,5 +1,6 @@
 (function(){
 var D={
+'Barua Pepe':'Email',
 'Kuhusu Sisi':'About Us','Mwanzo':'Home','Huduma':'Services','Tuzo':'Awards','Maswali':'FAQ','Mawasiliano':'Contact','Kuhusu':'About',
 'Ulinzi wa Uhakika Dar es Salaam':'Reliable Security in Dar es Salaam','Tuzo na Mafanikio':'Awards & Achievements',
 'Kuhusu NATALE SECURITY LIMITED, dira, dhamira na kauli mbiu.':'About NATALE SECURITY LIMITED: vision, mission and motto.',
