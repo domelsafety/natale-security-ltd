@@ -1,5 +1,6 @@
 (function(){
 var D={
+'Tupate Ofisini':'Find Our Office','Fungua kwenye Ramani':'Open in Maps','Tuma kupitia Barua Pepe':'Send via Email','Ramani ya ofisi ya NATALE SECURITY LIMITED':'Map of the NATALE SECURITY LIMITED office',
 'Barua Pepe':'Email',
 'Kuhusu Sisi':'About Us','Mwanzo':'Home','Huduma':'Services','Tuzo':'Awards','Maswali':'FAQ','Mawasiliano':'Contact','Kuhusu':'About',
 'Ulinzi wa Uhakika Dar es Salaam':'Reliable Security in Dar es Salaam','Tuzo na Mafanikio':'Awards & Achievements',
@@ -44,13 +45,13 @@ var D={
 'Kamera za CCTV na ufuatiliaji wa eneo kwa wakati halisi.':'CCTV cameras and real-time monitoring of your premises.',
 'Usindikizaji salama wa fedha na bidhaa za thamani.':'Secure escort of cash and high-value goods.',
 'Ulinzi wa Hospitali na Taasisi za Afya':'Hospital & Healthcare Security','Tumetunukiwa Best Hospital Security Company of the Year 2026 (TSSA).':'We were awarded Best Hospital Security Company of the Year 2026 (TSSA).'};
-var K=['alt','aria-label'],orig=new WeakMap(),attrs=[],lang='sw';
+var K=["alt","aria-label","title"],orig=new WeakMap(),attrs=[],lang='sw';
 function tr(s,l){var t=s.trim();return l==='en'&&D[t]?s.replace(t,D[t]):s}
 function walk(n,f){for(var c=n.firstChild;c;c=c.nextSibling){if(c.nodeType===3)f(c);else if(c.nodeType===1&&!/^(SCRIPT|STYLE)$/.test(c.tagName))walk(c,f)}}
 var title0=document.title,meta=document.querySelector('meta[name=description]'),meta0=meta&&meta.content;
 function apply(l){lang=l;document.documentElement.lang=l;
 walk(document.body,function(t){if(!orig.has(t))orig.set(t,t.nodeValue);t.nodeValue=tr(orig.get(t),l)});
-document.querySelectorAll('[alt],[aria-label]').forEach(function(e){K.forEach(function(k){if(e.hasAttribute(k)){var a=e.__o=e.__o||{};if(!(k in a))a[k]=e.getAttribute(k);e.setAttribute(k,tr(a[k],l))}})});
+document.querySelectorAll('[alt],[aria-label],[title]').forEach(function(e){K.forEach(function(k){if(e.hasAttribute(k)){var a=e.__o=e.__o||{};if(!(k in a))a[k]=e.getAttribute(k);e.setAttribute(k,tr(a[k],l))}})});
 var p=title0.split(' | ');document.title=(l==='en'&&D[p[0]]?D[p[0]]:p[0])+' | '+p.slice(1).join(' | ');
 if(meta)meta.content=tr(meta0,l);
 document.querySelectorAll('.lg button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
